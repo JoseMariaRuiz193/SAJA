@@ -16,11 +16,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Button"
-        tools:layout_editor_absoluteX="134dp"
-        tools:layout_editor_absoluteY="186dp" />
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="81dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
