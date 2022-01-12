@@ -18,4 +18,13 @@ class InicioActivity : AppCompatActivity() {
         val pantallaRegistro = Intent(this, RegistroActivity::class.java)
         startActivity(pantallaRegistro)
     }
+
+    fun onClickLogin(view: View){
+        irPantallaLogin()
+    }
+
+    fun irPantallaLogin() {
+        val pantallaLogin = Intent(this, LoginActivity::class.java)
+        startActivity(pantallaLogin)
+    }
 }
