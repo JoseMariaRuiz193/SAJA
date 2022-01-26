@@ -11,9 +11,11 @@ class InicioActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.inicio)
+        /*
         ApiClient.apiKey["token"] = "c7jgmpiad3i887nsdfvg"
         val apiClient = DefaultApi()
-
+        println(apiClient.stockSymbols("US", "US exchanges (NYSE, Nasdaq)", "XNYS,XASE,BATS,ARCX,XNMS,XNCM,XNGS,IEXG", ""))
+        */
     }
     fun onClickRegistro(view: View){
         irPantallaRegistro()
