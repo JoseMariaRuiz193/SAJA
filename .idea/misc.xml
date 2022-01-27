@@ -3,11 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/VANT/AndroidStudioProjects/SAJA/app/src/main/res/layout/activity_forgot_password.xml" value="0.18" />
         <entry key="..\:/Users/VANT/AndroidStudioProjects/SAJA/app/src/main/res/layout/activity_main.xml" value="0.1390625" />
         <entry key="..\:/Users/VANT/AndroidStudioProjects/SAJA/app/src/main/res/layout/activity_main2.xml" value="0.13541666666666666" />
+        <entry key="..\:/Users/VANT/AndroidStudioProjects/SAJA/app/src/main/res/layout/activity_pantalla_principal.xml" value="0.1111111111111111" />
+        <entry key="..\:/Users/VANT/AndroidStudioProjects/SAJA/app/src/main/res/layout/inicio.xml" value="0.13272543059777103" />
+        <entry key="..\:/Users/VANT/AndroidStudioProjects/SAJA/app/src/main/res/layout/login.xml" value="0.22708333333333333" />
+        <entry key="..\:/Users/VANT/AndroidStudioProjects/SAJA/app/src/main/res/layout/main.xml" value="0.22708333333333333" />
         <entry key="..\:/Users/perez/AndroidStudioProjects/SAJA/app/src/main/res/layout/activity_main.xml" value="0.265625" />
         <entry key="..\:/Users/perez/AndroidStudioProjects/SAJA/app/src/main/res/layout/activity_main2.xml" value="0.265625" />
-        <entry key="..\:/Users/perez/AndroidStudioProjects/SAJA/app/src/main/res/layout/activity_pantalla_principal.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/perez/AndroidStudioProjects/SAJA/app/src/main/res/layout/inicio.xml" value="0.265625" />
         <entry key="..\:/Users/perez/AndroidStudioProjects/SAJA/app/src/main/res/layout/login.xml" value="0.20885416666666667" />
         <entry key="..\:/Users/perez/AndroidStudioProjects/SAJA/app/src/main/res/layout/main.xml" value="0.176" />

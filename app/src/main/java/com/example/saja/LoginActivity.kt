@@ -49,6 +49,15 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
+    fun forgotPassword(view: View) {
+        startActivity(
+            Intent(
+                this,
+                ForgotPasswordActivity::class.java
+            )
+        )
+    }
+
     fun showAlertCamposVacios() {
         val builder = AlertDialog.Builder(this)
         builder.setTitle("ERROR")
@@ -65,4 +74,5 @@ class LoginActivity : AppCompatActivity() {
         val dialog: AlertDialog = builder.create()
         dialog.show()
     }
+
 }
