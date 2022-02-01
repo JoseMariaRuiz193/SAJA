@@ -74,5 +74,12 @@ class LoginActivity : AppCompatActivity() {
         val dialog: AlertDialog = builder.create()
         dialog.show()
     }
+    fun onClickRegistro(view: View){
+        irPantallaRegistro()
+    }
 
+    fun irPantallaRegistro() {
+        val pantallaRegistro = Intent(this, RegistroActivity::class.java)
+        startActivity(pantallaRegistro)
+    }
 }

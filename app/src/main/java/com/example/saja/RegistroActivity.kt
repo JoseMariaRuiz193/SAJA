@@ -54,7 +54,7 @@ class RegistroActivity : AppCompatActivity() {
     }
 
     fun irPantallaInicio() {
-        val pantallaInicio = Intent(this, InicioActivity::class.java)
+        val pantallaInicio = Intent(this, LoginActivity::class.java)
         startActivity(pantallaInicio)
     }
     fun showAlertCamposVacios() {
