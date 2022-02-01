@@ -1,8 +1,10 @@
 package com.example.saja
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.StrictMode
+import android.view.View
 import android.widget.TextView
 import io.finnhub.api.apis.DefaultApi
 import io.finnhub.api.infrastructure.ApiClient
@@ -23,5 +25,13 @@ class MainActivity : AppCompatActivity() {
         tv.setText(currentprice.toString())
 
 
+    }
+    fun onClickInicio(view: View){
+        irPantallaInicio()
+    }
+
+    fun irPantallaInicio() {
+        val pantallaInicio = Intent(this, LoginActivity::class.java)
+        startActivity(pantallaInicio)
     }
 }

@@ -8,9 +8,10 @@
 
     <Button
         android:id="@+id/button6"
-        android:layout_width="221dp"
-        android:layout_height="98dp"
-        android:text="Button"
+        android:layout_width="209dp"
+        android:layout_height="99dp"
+        android:onClick="onClickInicio"
+        android:text="SALIR"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,4 +26,5 @@
         android:text="price"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
