@@ -3,8 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Pruebas/AndroidStudioProjects/SAJAGrupal/app/src/main/res/layout/activity_forgot_password.xml" value="0.20572916666666666" />
+        <entry key="..\:/Users/Pruebas/AndroidStudioProjects/SAJAGrupal/app/src/main/res/layout/activity_cuenta_creada.xml" value="0.28306159420289856" />
+        <entry key="..\:/Users/Pruebas/AndroidStudioProjects/SAJAGrupal/app/src/main/res/layout/activity_forgot_password.xml" value="0.33" />
         <entry key="..\:/Users/Pruebas/AndroidStudioProjects/SAJAGrupal/app/src/main/res/layout/activity_pantalla_principal.xml" value="0.20572916666666666" />
+        <entry key="..\:/Users/Pruebas/AndroidStudioProjects/SAJAGrupal/app/src/main/res/layout/activity_splash.xml" value="0.28306159420289856" />
+        <entry key="..\:/Users/Pruebas/AndroidStudioProjects/SAJAGrupal/app/src/main/res/layout/activity_tuto1.xml" value="0.28306159420289856" />
+        <entry key="..\:/Users/Pruebas/AndroidStudioProjects/SAJAGrupal/app/src/main/res/layout/activity_tuto2.xml" value="0.28306159420289856" />
+        <entry key="..\:/Users/Pruebas/AndroidStudioProjects/SAJAGrupal/app/src/main/res/layout/activity_tuto3.xml" value="0.28306159420289856" />
         <entry key="..\:/Users/Pruebas/AndroidStudioProjects/SAJAGrupal/app/src/main/res/layout/login.xml" value="0.33" />
         <entry key="..\:/Users/Pruebas/AndroidStudioProjects/SAJAGrupal/app/src/main/res/layout/main.xml" value="0.20260416666666667" />
         <entry key="..\:/Users/Pruebas/AndroidStudioProjects/SAJAGrupal/app/src/main/res/layout/registro.xml" value="0.33" />

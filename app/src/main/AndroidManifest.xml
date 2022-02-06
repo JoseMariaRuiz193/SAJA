@@ -12,6 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".tuto3"
+            android:exported="true" />
+        <activity
+            android:name=".tuto2"
+            android:exported="true" />
+        <activity
+            android:name=".tuto1"
+            android:exported="true" />
+        <activity
+            android:name=".CuentaCreada"
+            android:exported="true" />
+        <activity
             android:name=".ForgotPasswordActivity"
             android:exported="true" />
         <activity
@@ -24,7 +39,7 @@
             android:name=".RegistroActivity"
             android:exported="true" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".Splash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
