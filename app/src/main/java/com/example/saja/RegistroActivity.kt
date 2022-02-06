@@ -31,7 +31,7 @@ class RegistroActivity : AppCompatActivity() {
                                 .addOnCompleteListener {
                                     if (it.isSuccessful) {
                                         db.collection("users").document(username.text.toString()).set(hashMapOf("email" to correo.text.toString(),"password" to password.text.toString()))
-                                        val main= Intent(this, MainActivity::class.java)
+                                        val main= Intent(this, CuentaCreada::class.java)
                                         startActivity(main)
                                     } else {
                                         //Error

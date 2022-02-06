@@ -12,7 +12,7 @@ class tuto3 : AppCompatActivity() {
 
         val buttontuto3 = findViewById<Button>(R.id.buttontuto3)
         buttontuto3.setOnClickListener{
-            val intent = Intent(this, pantallaPrincipal::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
 
         }
