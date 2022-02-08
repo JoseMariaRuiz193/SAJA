@@ -15,11 +15,13 @@ import com.google.android.gms.common.api.ApiException
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
+import com.google.firebase.firestore.FirebaseFirestore
 import java.lang.Exception
 
 class LoginActivity : AppCompatActivity() {
 
     private val GOOGLE_SIGN_IN = 100
+    private val db = FirebaseFirestore.getInstance()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,7 +40,7 @@ class LoginActivity : AppCompatActivity() {
         //Google
 
         val googleConf = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).
-        requestIdToken(getString(R.string.default_web_client_id)).requestEmail().build()
+        requestIdToken(getString(R.string.default_web_client_id2)).requestEmail().build()
 
         val gClient= GoogleSignIn.getClient(this, googleConf)
 
