@@ -20,10 +20,13 @@ class MainActivity : AppCompatActivity() {
         ApiClient.apiKey["token"] = "sandbox_c7jgp8iad3i887nsdhgg"
         val json = apiClient.quote("TSLA")
         val currentprice = json.c
+        val ticker = json.pc
 
-        val tv: TextView = findViewById(R.id.price)
-        tv.setText(currentprice.toString())
+        val setprice: TextView = findViewById(R.id.price)
+        setprice.setText(currentprice.toString())
 
+        val setticker: TextView = findViewById(R.id.ticker)
+        setticker.setText(ticker.toString())
 
     }
     fun onClickInicio(view: View){

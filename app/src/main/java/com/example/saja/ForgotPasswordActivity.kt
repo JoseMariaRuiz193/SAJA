@@ -42,9 +42,12 @@ class ForgotPasswordActivity : AppCompatActivity() {
             Toast.makeText(this, "Agregue el correo", Toast.LENGTH_SHORT).show()
         }
     }
-    private fun goMain() {
-        val intent = Intent(this, LoginActivity::class.java)
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
-        startActivity(intent)
+
+    fun onClickInicio1(view: View){
+        goMain()
+    }
+        fun goMain() {
+            val pantallaInicio1 = Intent(this, LoginActivity::class.java)
+            startActivity(pantallaInicio1)
     }
 }
