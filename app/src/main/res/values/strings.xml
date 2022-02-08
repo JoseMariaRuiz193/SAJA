@@ -4,4 +4,6 @@
     <string name="username">USERNAME</string>
     <string name="todo">TODO</string>
     <string name="buscador">BUSCADOR</string>
+   <string name="preferences">com.example.myapplication.PREFERENCE_KEY</string>
+
 </resources>
