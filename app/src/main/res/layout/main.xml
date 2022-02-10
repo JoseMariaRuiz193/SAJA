@@ -437,6 +437,19 @@
         app:layout_constraintTop_toBottomOf="@+id/msftnom"
         tools:layout_editor_absoluteX="0dp" />
 
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="166dp"
+        android:layout_marginEnd="157dp"
+        android:layout_marginBottom="63dp"
+        android:onClick="onClickMain2"
+        android:text="IR MAIN 2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 

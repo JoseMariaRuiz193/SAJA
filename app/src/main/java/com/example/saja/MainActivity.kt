@@ -94,7 +94,7 @@ class MainActivity : AppCompatActivity() {
         val setnomaapl: TextView = findViewById(R.id.applenom)
         setnomaapl.setText(nombaapl)
 
-        //Ticker Tesla
+        //Ticker APPL
         val tickeraapl = jnomaapl.ticker
         val settickeraapl: TextView = findViewById(R.id.appleticker)
         settickeraapl.setText(tickeraapl)
@@ -258,6 +258,14 @@ class MainActivity : AppCompatActivity() {
     fun irPantallaInicio() {
         val pantallaInicio = Intent(this, LoginActivity::class.java)
         startActivity(pantallaInicio)
+    }
+    fun onClickMain2(view: View){
+        irPantallaMain2()
+    }
+
+    fun irPantallaMain2() {
+        val pantallaMainActivity2MainActivity = Intent(this, Activity2MainActivity::class.java)
+        startActivity(pantallaMainActivity2MainActivity)
     }
 }
 
