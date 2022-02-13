@@ -1,6 +1,8 @@
 package com.example.saja
 
 import android.content.Intent
+import android.icu.number.NumberFormatter.with
+import android.icu.number.NumberRangeFormatter.with
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.StrictMode
@@ -10,12 +12,14 @@ import android.widget.ImageView
 import android.widget.TextView
 import io.finnhub.api.apis.DefaultApi
 import io.finnhub.api.infrastructure.ApiClient
+import java.lang.System.load
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main)
+
         val policy = StrictMode.ThreadPolicy.Builder().permitAll().build()
         StrictMode.setThreadPolicy(policy)
         val apiClient = DefaultApi()
@@ -31,7 +35,7 @@ class MainActivity : AppCompatActivity() {
          prueba.setText(urllogo.toString())*/
 
         //Precio Tesla
-        ApiClient.apiKey["token"] = "sandbox_c7jgp8iad3i887nsdhgg"
+        ApiClient.apiKey["token"] = "sandbox_c84l5qaad3i9u79habjg"
         val jsontesla = apiClient.quote("TSLA")
         val currentpricetsladolar = jsontesla.c
         val redondeartsla = "%.2f".format(currentpricetsladolar).toDouble()
@@ -70,17 +74,11 @@ class MainActivity : AppCompatActivity() {
 
         }
         //Logo Apple
-        /* ApiClient.apiKey["token"] = "sandbox_c7jgp8iad3i887nsdhgg"
-         val imageView: ImageView = findViewById(R.id.imageView)
-         val teslaprofile = apiClient.companyProfile2(symbol = "TSLA", isin = null, cusip = null)
-         //val urllogo = "https://static.finnhub.io/logo/87cb30d8-80df-11ea-8951-00000000092a.png"
-         val urllogo = teslaprofile.finnhubIndustry
-         //Picasso.with(this).load(urllogo).into(imageView)
-         val prueba: TextView = findViewById(R.id.prueba)
-         prueba.setText(urllogo.toString())*/
+
+
 
         //Precio Apple
-        ApiClient.apiKey["token"] = "sandbox_c7jgp8iad3i887nsdhgg"
+        ApiClient.apiKey["token"] = "sandbox_c84l5qaad3i9u79habjg"
         val jsonapple = apiClient.quote("AAPL")
         val currentpriceappledolar = jsonapple.c
         val redondearapple = "%.2f".format(currentpriceappledolar).toDouble()
@@ -94,7 +92,7 @@ class MainActivity : AppCompatActivity() {
         val setnomaapl: TextView = findViewById(R.id.applenom)
         setnomaapl.setText(nombaapl)
 
-        //Ticker APPL
+        //Ticker Tesla
         val tickeraapl = jnomaapl.ticker
         val settickeraapl: TextView = findViewById(R.id.appleticker)
         settickeraapl.setText(tickeraapl)
@@ -111,7 +109,7 @@ class MainActivity : AppCompatActivity() {
             }
             if (perapple <= 0) {
                 val setperapple: TextView = findViewById(R.id.appleperneg)
-                setperapple.setText("▼ "+pertsla.toString()+" %")
+                setperapple.setText("▼ "+perapple.toString()+" %")
 
                 val nosetperapple: TextView = findViewById(R.id.appleperpos)
                 nosetperapple.setText("")
@@ -123,14 +121,14 @@ class MainActivity : AppCompatActivity() {
         /* ApiClient.apiKey["token"] = "sandbox_c7jgp8iad3i887nsdhgg"
          val imageView: ImageView = findViewById(R.id.imageView)
          val teslaprofile = apiClient.companyProfile2(symbol = "TSLA", isin = null, cusip = null)
-         //val urllogo = "https://static.finnhub.io/logo/87cb30d8-80df-11ea-8951-00000000092a.png"
+         val urllogo = "https://static.finnhub.io/logo/87cb30d8-80df-11ea-8951-00000000092a.png"
          val urllogo = teslaprofile.finnhubIndustry
-         //Picasso.with(this).load(urllogo).into(imageView)
+         Picasso.with(this).load(urllogo).into(imageView)
          val prueba: TextView = findViewById(R.id.prueba)
          prueba.setText(urllogo.toString())*/
 
         //Precio Paypal
-        ApiClient.apiKey["token"] = "sandbox_c7jgp8iad3i887nsdhgg"
+        ApiClient.apiKey["token"] = "sandbox_c84l5qaad3i9u79habjg"
         val jsonpypl = apiClient.quote("PYPL")
         val currentpricepypldolar = jsonpypl.c
         val redondearpypl = "%.2f".format(currentpricepypldolar).toDouble()
@@ -161,7 +159,7 @@ class MainActivity : AppCompatActivity() {
             }
             if (perpypl <= 0) {
                 val setperpypl: TextView = findViewById(R.id.pyplperneg)
-                setperpypl.setText("▼ "+pertsla.toString()+" %")
+                setperpypl.setText("▼ "+perpypl.toString()+" %")
 
                 val nosetperpypl: TextView = findViewById(R.id.pyplperpos)
                 nosetperpypl.setText("")
@@ -170,7 +168,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         //Precio Amazon
-        ApiClient.apiKey["token"] = "sandbox_c7jgp8iad3i887nsdhgg"
+        ApiClient.apiKey["token"] = "sandbox_c84l5qaad3i9u79habjg"
         val jsonamzn = apiClient.quote("AMZN")
         val currentpriceamzndolar = jsonamzn.c
         val redondearamzn = "%.2f".format(currentpriceamzndolar).toDouble()
@@ -196,12 +194,12 @@ class MainActivity : AppCompatActivity() {
                 val setperamzn: TextView = findViewById(R.id.amznperpos)
                 setperamzn.setText("▲ "+peramzn.toString()+" %")
 
-                val nosetperpypl: TextView = findViewById(R.id.amznperneg)
-                nosetperpypl.setText("")
+                val nosetperamzn: TextView = findViewById(R.id.amznperneg)
+                nosetperamzn.setText("")
             }
             if (peramzn <= 0) {
                 val setperamzn: TextView = findViewById(R.id.amznperneg)
-                setperamzn.setText("▼ "+pertsla.toString()+" %")
+                setperamzn.setText("▼ "+peramzn.toString()+" %")
 
                 val nosetperamzn: TextView = findViewById(R.id.amznperpos)
                 nosetperamzn.setText("")
@@ -210,7 +208,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         //Precio Microsoft
-        ApiClient.apiKey["token"] = "sandbox_c7jgp8iad3i887nsdhgg"
+        ApiClient.apiKey["token"] = "sandbox_c84l5qaad3i9u79habjg"
         val jsonmsft = apiClient.quote("MSFT")
         val currentpricemsftdolar = jsonmsft.c
         val redondearmsft = "%.2f".format(currentpricemsftdolar).toDouble()
@@ -241,7 +239,7 @@ class MainActivity : AppCompatActivity() {
             }
             if (permsft <= 0) {
                 val setpermsft: TextView = findViewById(R.id.msftperneg)
-                setpermsft.setText("▼ "+pertsla.toString()+" %")
+                setpermsft.setText("▼ "+permsft.toString()+" %")
 
                 val nosetpermsft: TextView = findViewById(R.id.msftperpos)
                 nosetpermsft.setText("")
@@ -259,14 +257,5 @@ class MainActivity : AppCompatActivity() {
         val pantallaInicio = Intent(this, LoginActivity::class.java)
         startActivity(pantallaInicio)
     }
-    fun onClickMain2(view: View){
-        irPantallaMain2()
-    }
-
-    fun irPantallaMain2() {
-        val pantallaMainActivity2MainActivity = Intent(this, Activity2MainActivity::class.java)
-        startActivity(pantallaMainActivity2MainActivity)
-    }
 }
-
 

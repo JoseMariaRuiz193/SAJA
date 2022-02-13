@@ -3,25 +3,28 @@ package com.example.saja
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.StrictMode
 import android.view.View
 import android.widget.TextView
 import io.finnhub.api.apis.DefaultApi
 import io.finnhub.api.infrastructure.ApiClient
 
-class Activity2MainActivity : AppCompatActivity() {
+class BusquedaActivos : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity2_main)
-        val apiClient = DefaultApi()
+        setContentView(R.layout.busqueda_activos)
+        val policy = StrictMode.ThreadPolicy.Builder().permitAll().build()
+        StrictMode.setThreadPolicy(policy)
 
-        ApiClient.apiKey["token"] = "sandbox_c7jgp8iad3i887nsdhgg"
-        val jdesaapl = apiClient.companyProfile(symbol = "AAPL", isin = null, cusip = null)
-        val desaapl = jdesaapl.description
-        val setdesaapl: TextView = findViewById(R.id.textView8)
+        val apiClient = DefaultApi()
+        ApiClient.apiKey["token"] = "c81p8fiad3i8p98ipb1g"
+        val jdesaapl = apiClient.companyProfile2(symbol = "AAPL", isin = null, cusip = null)
+        val desaapl = jdesaapl.exchange
+        val setdesaapl: TextView = findViewById(R.id.mercado)
         setdesaapl.setText(desaapl)
 
 
-        ApiClient.apiKey["token"] = "sandbox_c7jgp8iad3i887nsdhgg"
+        ApiClient.apiKey["token"] = "c81p8fiad3i8p98ipb1g"
         val jsonapple = apiClient.quote("AAPL")
         val currentpriceappledolar = jsonapple.c
         val redondearapple = "%.2f".format(currentpriceappledolar).toDouble()
@@ -63,11 +66,11 @@ class Activity2MainActivity : AppCompatActivity() {
 
     }
     fun onClickInicio(view: View){
-        irPantallaInicio()
+        irPantallahome()
     }
 
-    fun irPantallaInicio() {
-        val pantallaInicio = Intent(this, LoginActivity::class.java)
+    fun irPantallahome() {
+        val pantallaInicio = Intent(this, MainActivity::class.java)
         startActivity(pantallaInicio)
     }
 }

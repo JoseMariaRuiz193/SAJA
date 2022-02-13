@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity
-            android:name=".Activity2MainActivity"
+            android:name=".Splash"
             android:exported="true" />
         <activity
             android:name=".LoginActivity"
@@ -39,7 +39,7 @@
             android:name=".RegistroActivity"
             android:exported="true" />
         <activity
-            android:name=".Splash"
+            android:name=".BusquedaActivos"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
