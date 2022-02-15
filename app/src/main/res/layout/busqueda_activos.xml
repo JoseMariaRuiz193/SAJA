@@ -102,24 +102,6 @@
         app:srcCompat="@drawable/ic_launcher_foreground" />
 
     <TextView
-        android:id="@+id/mercado"
-        android:layout_width="309dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="55dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="298dp"
-        android:fontFamily="@font/monbol"
-        android:isScrollContainer="true"
-        android:overScrollMode="ifContentScrolls"
-        android:scrollbarStyle="outsideInset"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.011"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:textAllCaps="false" />
-
-    <TextView
         android:id="@+id/descripcion"
         android:layout_width="326dp"
         android:layout_height="321dp"
@@ -128,5 +110,15 @@
         android:text="TextView"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/mercado"
+        android:layout_width="97dp"
+        android:layout_height="36dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descripcion" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

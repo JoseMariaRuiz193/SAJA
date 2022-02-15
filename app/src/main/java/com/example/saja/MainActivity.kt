@@ -9,12 +9,15 @@ import android.os.StrictMode
 import android.util.Log
 import android.view.View
 import android.widget.ImageView
+import android.widget.SearchView
 import android.widget.TextView
 import io.finnhub.api.apis.DefaultApi
 import io.finnhub.api.infrastructure.ApiClient
 import java.lang.System.load
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity()  {
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
@@ -23,6 +26,7 @@ class MainActivity : AppCompatActivity() {
         val policy = StrictMode.ThreadPolicy.Builder().permitAll().build()
         StrictMode.setThreadPolicy(policy)
         val apiClient = DefaultApi()
+
 
         //Logo Tesla
         /* ApiClient.apiKey["token"] = "sandbox_c7jgp8iad3i887nsdhgg"
@@ -256,6 +260,14 @@ class MainActivity : AppCompatActivity() {
     fun irPantallaInicio() {
         val pantallaInicio = Intent(this, LoginActivity::class.java)
         startActivity(pantallaInicio)
+    }
+    fun buscar(view : View){
+        val a : TextView = findViewById(R.id.editTextTextPersonName2)
+        var atext = a.text.toString()
+        val intent = Intent(this, BusquedaActivos::class.java)
+        intent.putExtra("activo", atext )
+
+        startActivity(intent)
     }
 }
 

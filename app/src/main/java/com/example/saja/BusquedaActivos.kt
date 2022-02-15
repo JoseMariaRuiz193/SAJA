@@ -16,12 +16,19 @@ class BusquedaActivos : AppCompatActivity() {
         val policy = StrictMode.ThreadPolicy.Builder().permitAll().build()
         StrictMode.setThreadPolicy(policy)
 
+
         val apiClient = DefaultApi()
         ApiClient.apiKey["token"] = "c81p8fiad3i8p98ipb1g"
         val jdesaapl = apiClient.companyProfile2(symbol = "AAPL", isin = null, cusip = null)
         val desaapl = jdesaapl.exchange
-        val setdesaapl: TextView = findViewById(R.id.mercado)
-        setdesaapl.setText(desaapl)
+
+        if(intent.getExtras() != null){
+            val value = intent.getExtras()?.getString("activo", "")
+            val setdesaapl: TextView = findViewById(R.id.mercado)
+            setdesaapl.text = value
+            setdesaapl.bringToFront()
+        }
+
 
 
         ApiClient.apiKey["token"] = "c81p8fiad3i8p98ipb1g"
