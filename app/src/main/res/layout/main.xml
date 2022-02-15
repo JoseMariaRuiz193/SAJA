@@ -24,8 +24,8 @@
         android:id="@+id/Sombreado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily = "@font/monreg"
         android:layout_marginBottom="530dp"
+        android:fontFamily="@font/monreg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/fondouser" />
@@ -436,6 +436,14 @@
         android:background="?android:attr/listDivider"
         app:layout_constraintTop_toBottomOf="@+id/msftnom"
         tools:layout_editor_absoluteX="0dp" />
+
+    <SearchView
+        android:layout_width="361dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="296dp"
+        app:layout_constraintStart_toStartOf="@+id/Sombreado"
+        app:layout_constraintTop_toTopOf="@+id/Sombreado" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
