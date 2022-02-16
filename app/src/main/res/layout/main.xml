@@ -34,10 +34,10 @@
         android:id="@+id/TextBuscador"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="135dp"
-        android:layout_marginBottom="584dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginBottom="140dp"
         android:fontFamily="@font/monreg"
-        android:text="Busca una acción / Criptomoneda"
+        android:text="Busca una acción"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -47,43 +47,33 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
+        android:layout_marginTop="2dp"
         android:layout_marginBottom="70dp"
         android:fontFamily="@font/monbol"
         android:text="PRINCIPALES ACCIONES"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/teslaprice"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Sombreado" />
 
     <TextView
         android:id="@+id/nombreempresas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="35dp"
         android:fontFamily="@font/monbol"
-        android:text="Nombre"
+        android:text="Nombre / Ticker"
         android:textColor="#AEAEAE"
         app:layout_constraintBottom_toTopOf="@+id/teslaprice"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/encticker"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="38dp"
-        android:layout_marginBottom="24dp"
-        android:fontFamily="@font/monbol"
-        android:text="Ticker"
-        android:textColor="#AEAEAE"
-        app:layout_constraintBottom_toTopOf="@+id/teslaprice"
-        app:layout_constraintEnd_toStartOf="@+id/encprecio" />
 
     <TextView
         android:id="@+id/encprecio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="200dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="35dp"
         android:fontFamily="@font/monbol"
         android:text="Precio"
         android:textColor="#AEAEAE"
@@ -95,7 +85,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="256dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="35dp"
         android:fontFamily="@font/monbol"
         android:text="%Cambio día"
         android:textColor="#AEAEAE"
@@ -106,29 +96,17 @@
         android:id="@+id/divider"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginTop="7dp"
         android:background="?android:attr/listDivider"
-        app:layout_constraintBottom_toTopOf="@+id/teslaprice"
+        app:layout_constraintTop_toBottomOf="@+id/nombreempresas"
         tools:layout_editor_absoluteX="-28dp" />
-
-    <TextView
-        android:id="@+id/encacriptos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="25dp"
-        android:fontFamily="@font/monbol"
-        android:text="PRINCIPALES CRIPTOMONEDAS"
-        android:textColor="#FFFFFF"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider2" />
 
     <TextView
         android:id="@+id/teslaprice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="200dp"
-        android:layout_marginTop="275dp"
+        android:layout_marginTop="290dp"
         android:fontFamily="@font/monbol"
         android:text="price"
         android:textColor="#FFFFFF"
@@ -139,33 +117,32 @@
         android:id="@+id/teslanom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="275dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="15dp"
         android:fontFamily="@font/monbol"
         android:text="nom"
         android:textColor="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
 
     <TextView
         android:id="@+id/teslaticker"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="275dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/monbol"
         android:text="ticker"
         android:textColor="#AEAEAE"
-        app:layout_constraintEnd_toStartOf="@+id/teslaprice"
-        app:layout_constraintStart_toEndOf="@+id/teslanom"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teslanom" />
 
     <TextView
         android:id="@+id/tslaperpos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="275dp"
+        android:layout_marginTop="290dp"
         android:fontFamily="@font/monbol"
         android:text="prueba"
         android:textColor="#5ED5A8"
@@ -177,7 +154,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="275dp"
+        android:layout_marginTop="290dp"
         android:fontFamily="@font/monbol"
         android:text="prueba"
         android:textColor="#f1242c"
@@ -188,26 +165,25 @@
         android:id="@+id/applenom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/monbol"
         android:text="nom"
         android:textColor="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/teslanom" />
+        app:layout_constraintTop_toBottomOf="@+id/teslaticker" />
 
     <TextView
         android:id="@+id/appleticker"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="2dp"
         android:fontFamily="@font/monbol"
         android:text="ticker"
         android:textColor="#AEAEAE"
-        app:layout_constraintEnd_toStartOf="@+id/teslaprice"
-        app:layout_constraintStart_toEndOf="@+id/teslanom"
-        app:layout_constraintTop_toBottomOf="@+id/teslaticker" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/applenom" />
 
     <TextView
         android:id="@+id/appleprice"
@@ -443,7 +419,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:onClick="buscar"
-        android:text="Button"
+        android:text="¡BUSCAR AHORA!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.411"
@@ -453,16 +429,23 @@
         android:id="@+id/editTextTextPersonName2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
         app:layout_constraintBottom_toTopOf="@+id/buscar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.383"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/logotesla"
+        android:layout_width="41dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/encacriptos"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

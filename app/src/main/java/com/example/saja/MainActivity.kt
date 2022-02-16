@@ -11,6 +11,7 @@ import android.view.View
 import android.widget.ImageView
 import android.widget.SearchView
 import android.widget.TextView
+import com.squareup.picasso.Picasso
 import io.finnhub.api.apis.DefaultApi
 import io.finnhub.api.infrastructure.ApiClient
 import java.lang.System.load
@@ -26,17 +27,6 @@ class MainActivity : AppCompatActivity()  {
         val policy = StrictMode.ThreadPolicy.Builder().permitAll().build()
         StrictMode.setThreadPolicy(policy)
         val apiClient = DefaultApi()
-
-
-        //Logo Tesla
-        /* ApiClient.apiKey["token"] = "sandbox_c7jgp8iad3i887nsdhgg"
-         val imageView: ImageView = findViewById(R.id.imageView)
-         val teslaprofile = apiClient.companyProfile2(symbol = "TSLA", isin = null, cusip = null)
-         //val urllogo = "https://static.finnhub.io/logo/87cb30d8-80df-11ea-8951-00000000092a.png"
-         val urllogo = teslaprofile.finnhubIndustry
-         //Picasso.with(this).load(urllogo).into(imageView)
-         val prueba: TextView = findViewById(R.id.prueba)
-         prueba.setText(urllogo.toString())*/
 
         //Precio Tesla
         ApiClient.apiKey["token"] = "sandbox_c84l5qaad3i9u79habjg"
@@ -58,6 +48,10 @@ class MainActivity : AppCompatActivity()  {
         val settickertsla: TextView = findViewById(R.id.teslaticker)
         settickertsla.setText(tickertsla)
 
+        //Logo Tesla
+        val imagetesla = findViewById<ImageView>(R.id.logotesla)
+        Picasso.get().load(jnomtsla.logo).noFade().into(imagetesla)
+
         //%Cambio Tesla
         val pertsla = jsontesla.dp
         if (pertsla != null) {
@@ -77,21 +71,18 @@ class MainActivity : AppCompatActivity()  {
             }
 
         }
-        //Logo Apple
 
-
-
-        //Precio Apple
+        //Precio Intel
         ApiClient.apiKey["token"] = "sandbox_c84l5qaad3i9u79habjg"
-        val jsonapple = apiClient.quote("AAPL")
-        val currentpriceappledolar = jsonapple.c
-        val redondearapple = "%.2f".format(currentpriceappledolar).toDouble()
-        val setpriceapple: TextView = findViewById(R.id.appleprice)
-        setpriceapple.setText(redondearapple.toString()+" $")
+        val jsonintel = apiClient.quote("INTC")
+        val currentpriceappledolar = jsonintel.c
+        val redondearintel = "%.2f".format(currentpriceappledolar).toDouble()
+        val setpriceintel: TextView = findViewById(R.id.appleprice)
+        setpriceintel.setText(redondearintel.toString()+" $")
 
         //Nombre Apple
         ApiClient.apiKey["token"] = "c81p8fiad3i8p98ipb1g"
-        val jnomaapl = apiClient.companyProfile2(symbol = "AAPL", isin = null, cusip = null)
+        val jnomaapl = apiClient.companyProfile2(symbol = "INTC", isin = null, cusip = null)
         val nombaapl = jnomaapl.name
         val setnomaapl: TextView = findViewById(R.id.applenom)
         setnomaapl.setText(nombaapl)
@@ -102,7 +93,7 @@ class MainActivity : AppCompatActivity()  {
         settickeraapl.setText(tickeraapl)
 
         //%Cambio Apple
-        val perapple = jsonapple.dp
+        val perapple = jsonintel.dp
         if (perapple != null) {
             if (perapple > 0) {
                 val setperapple: TextView = findViewById(R.id.appleperpos)
@@ -120,16 +111,6 @@ class MainActivity : AppCompatActivity()  {
             }
 
         }
-
-        //Logo Paypal
-        /* ApiClient.apiKey["token"] = "sandbox_c7jgp8iad3i887nsdhgg"
-         val imageView: ImageView = findViewById(R.id.imageView)
-         val teslaprofile = apiClient.companyProfile2(symbol = "TSLA", isin = null, cusip = null)
-         val urllogo = "https://static.finnhub.io/logo/87cb30d8-80df-11ea-8951-00000000092a.png"
-         val urllogo = teslaprofile.finnhubIndustry
-         Picasso.with(this).load(urllogo).into(imageView)
-         val prueba: TextView = findViewById(R.id.prueba)
-         prueba.setText(urllogo.toString())*/
 
         //Precio Paypal
         ApiClient.apiKey["token"] = "sandbox_c84l5qaad3i9u79habjg"
