@@ -80,19 +80,23 @@ class MainActivity : AppCompatActivity()  {
         val setpriceintel: TextView = findViewById(R.id.appleprice)
         setpriceintel.setText(redondearintel.toString()+" $")
 
-        //Nombre Apple
+        //Nombre Intel
         ApiClient.apiKey["token"] = "c81p8fiad3i8p98ipb1g"
-        val jnomaapl = apiClient.companyProfile2(symbol = "INTC", isin = null, cusip = null)
-        val nombaapl = jnomaapl.name
-        val setnomaapl: TextView = findViewById(R.id.applenom)
-        setnomaapl.setText(nombaapl)
+        val jnomintel  = apiClient.companyProfile2(symbol = "INTC", isin = null, cusip = null)
+        val nombintel  = jnomintel .name
+        val setnomintel : TextView = findViewById(R.id.applenom)
+        setnomintel .setText(nombintel )
 
-        //Ticker Tesla
-        val tickeraapl = jnomaapl.ticker
+        //Ticker Intel
+        val tickeraapl = jnomintel .ticker
         val settickeraapl: TextView = findViewById(R.id.appleticker)
         settickeraapl.setText(tickeraapl)
 
-        //%Cambio Apple
+        //Logo Intel
+        val imageintel = findViewById<ImageView>(R.id.logointel)
+        Picasso.get().load(jnomintel.logo).noFade().into(imageintel)
+
+        //%Cambio Intel
         val perapple = jsonintel.dp
         if (perapple != null) {
             if (perapple > 0) {
@@ -131,6 +135,10 @@ class MainActivity : AppCompatActivity()  {
         val tickerpypl = jnompypl.ticker
         val settickerpypl: TextView = findViewById(R.id.pyplticker)
         settickerpypl.setText(tickerpypl)
+
+        //Logo Paypal
+        val imagepaypal = findViewById<ImageView>(R.id.logopypl)
+        Picasso.get().load(jnompypl.logo).noFade().into(imagepaypal)
 
         //%Cambio Paypal
         val perpypl = jsonpypl.dp
@@ -172,6 +180,10 @@ class MainActivity : AppCompatActivity()  {
         val settickeramzn: TextView = findViewById(R.id.amznticker)
         settickeramzn.setText(tickeramzn)
 
+        //Logo Amazon
+        val imageamazon = findViewById<ImageView>(R.id.logoamzn)
+        Picasso.get().load(jnomamzn.logo).noFade().into(imageamazon)
+
         //%Cambio Amazon
         val peramzn = jsonamzn.dp
         if (peramzn != null) {
@@ -211,6 +223,10 @@ class MainActivity : AppCompatActivity()  {
         val tickermsft = jnommsft.ticker
         val settickermsft: TextView = findViewById(R.id.msftticker)
         settickermsft.setText(tickermsft)
+
+        //Logo Amazon
+        val imageamsft = findViewById<ImageView>(R.id.logomsft)
+        Picasso.get().load(jnommsft.logo).noFade().into(imageamsft)
 
         //%Cambio Microsoft
         val permsft = jsonmsft.dp

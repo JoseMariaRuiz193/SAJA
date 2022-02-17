@@ -34,12 +34,11 @@
         android:id="@+id/TextBuscador"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="164dp"
-        android:layout_marginBottom="140dp"
+        android:layout_marginEnd="144dp"
         android:fontFamily="@font/monreg"
         android:text="Busca una acción"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
@@ -47,70 +46,59 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginBottom="70dp"
+        android:layout_marginTop="140dp"
         android:fontFamily="@font/monbol"
         android:text="PRINCIPALES ACCIONES"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/teslaprice"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Sombreado" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/nombreempresas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
-        android:layout_marginBottom="35dp"
+        android:layout_marginTop="31dp"
         android:fontFamily="@font/monbol"
         android:text="Nombre / Ticker"
         android:textColor="#AEAEAE"
-        app:layout_constraintBottom_toTopOf="@+id/teslaprice"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/encacciones" />
 
     <TextView
         android:id="@+id/encprecio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="200dp"
-        android:layout_marginBottom="35dp"
+        android:layout_marginStart="196dp"
+        android:layout_marginTop="31dp"
         android:fontFamily="@font/monbol"
         android:text="Precio"
         android:textColor="#AEAEAE"
-        app:layout_constraintBottom_toTopOf="@+id/teslaprice"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/encacciones" />
 
     <TextView
         android:id="@+id/cambiodia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="256dp"
-        android:layout_marginBottom="35dp"
+        android:layout_marginStart="264dp"
+        android:layout_marginTop="31dp"
         android:fontFamily="@font/monbol"
         android:text="%Cambio día"
         android:textColor="#AEAEAE"
-        app:layout_constraintBottom_toTopOf="@+id/teslaprice"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <View
-        android:id="@+id/divider"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="7dp"
-        android:background="?android:attr/listDivider"
-        app:layout_constraintTop_toBottomOf="@+id/nombreempresas"
-        tools:layout_editor_absoluteX="-28dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/encacciones" />
 
     <TextView
         android:id="@+id/teslaprice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="200dp"
-        android:layout_marginTop="290dp"
+        android:layout_marginTop="225dp"
+        android:layout_marginEnd="150dp"
         android:fontFamily="@font/monbol"
         android:text="price"
         android:textColor="#FFFFFF"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -118,12 +106,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="85dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="12dp"
         android:fontFamily="@font/monbol"
         android:text="nom"
         android:textColor="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider" />
+        app:layout_constraintTop_toBottomOf="@+id/Sombreado" />
 
     <TextView
         android:id="@+id/teslaticker"
@@ -141,24 +129,24 @@
         android:id="@+id/tslaperpos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="290dp"
+        android:layout_marginTop="225dp"
+        android:layout_marginEnd="40dp"
         android:fontFamily="@font/monbol"
         android:text="prueba"
         android:textColor="#5ED5A8"
-        app:layout_constraintStart_toEndOf="@+id/teslaprice"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tslaperneg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="290dp"
+        android:layout_marginTop="225dp"
+        android:layout_marginEnd="40dp"
         android:fontFamily="@font/monbol"
         android:text="prueba"
         android:textColor="#f1242c"
-        app:layout_constraintStart_toEndOf="@+id/teslaprice"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -177,8 +165,8 @@
         android:id="@+id/appleticker"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="85dp"
-        android:layout_marginTop="2dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/monbol"
         android:text="ticker"
         android:textColor="#AEAEAE"
@@ -189,252 +177,247 @@
         android:id="@+id/appleprice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="200dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="150dp"
         android:fontFamily="@font/monbol"
         android:text="price"
         android:textColor="#FFFFFF"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/teslaprice" />
 
     <TextView
         android:id="@+id/appleperneg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="40dp"
         android:fontFamily="@font/monbol"
         android:text="prueba"
         android:textColor="#f1242c"
-        app:layout_constraintStart_toEndOf="@+id/appleprice"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tslaperpos" />
 
     <TextView
         android:id="@+id/appleperpos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="40dp"
         android:fontFamily="@font/monbol"
         android:text="prueba"
         android:textColor="#5ED5A8"
-        app:layout_constraintStart_toEndOf="@+id/appleprice"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tslaperneg" />
 
     <TextView
         android:id="@+id/pyplnom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/monbol"
         android:text="nom"
         android:textColor="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/applenom" />
+        app:layout_constraintTop_toBottomOf="@+id/appleticker" />
 
     <TextView
         android:id="@+id/pyplticker"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/monbol"
         android:text="ticker"
         android:textColor="#AEAEAE"
-        app:layout_constraintEnd_toStartOf="@+id/pyplprice"
-        app:layout_constraintStart_toEndOf="@+id/teslanom"
-        app:layout_constraintTop_toBottomOf="@+id/appleticker" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pyplnom" />
 
     <TextView
         android:id="@+id/pyplprice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="200dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="150dp"
         android:fontFamily="@font/monbol"
         android:text="price"
         android:textColor="#FFFFFF"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appleprice" />
 
     <TextView
         android:id="@+id/pyplperneg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="40dp"
         android:fontFamily="@font/monbol"
         android:text="prueba"
         android:textColor="#f1242c"
-        app:layout_constraintStart_toEndOf="@+id/appleprice"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appleperneg" />
 
     <TextView
         android:id="@+id/pyplperpos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="40dp"
         android:fontFamily="@font/monbol"
         android:text="prueba"
         android:textColor="#5ED5A8"
-        app:layout_constraintStart_toEndOf="@+id/appleprice"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appleperneg" />
 
     <TextView
         android:id="@+id/amznnom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/monbol"
         android:text="nom"
         android:textColor="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pyplnom" />
+        app:layout_constraintTop_toBottomOf="@+id/pyplticker" />
 
     <TextView
         android:id="@+id/amznticker"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/monbol"
         android:text="ticker"
         android:textColor="#AEAEAE"
-        app:layout_constraintEnd_toStartOf="@+id/pyplprice"
-        app:layout_constraintStart_toEndOf="@+id/teslanom"
-        app:layout_constraintTop_toBottomOf="@+id/pyplticker" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amznnom" />
 
     <TextView
         android:id="@+id/amznprice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="200dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="150dp"
         android:fontFamily="@font/monbol"
         android:text="price"
         android:textColor="#FFFFFF"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pyplprice" />
 
     <TextView
         android:id="@+id/amznperneg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="40dp"
         android:fontFamily="@font/monbol"
         android:text="prueba"
         android:textColor="#f1242c"
-        app:layout_constraintStart_toEndOf="@+id/appleprice"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pyplperneg" />
 
     <TextView
         android:id="@+id/amznperpos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="40dp"
         android:fontFamily="@font/monbol"
         android:text="prueba"
         android:textColor="#5ED5A8"
-        app:layout_constraintStart_toEndOf="@+id/appleprice"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pyplperneg" />
 
     <TextView
         android:id="@+id/msftnom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/monbol"
         android:text="nom"
         android:textColor="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/amznnom" />
+        app:layout_constraintTop_toBottomOf="@+id/amznticker" />
 
     <TextView
         android:id="@+id/msftticker"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/monbol"
         android:text="ticker"
         android:textColor="#AEAEAE"
-        app:layout_constraintEnd_toStartOf="@+id/pyplprice"
-        app:layout_constraintStart_toEndOf="@+id/teslanom"
-        app:layout_constraintTop_toBottomOf="@+id/amznticker" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/msftnom" />
 
     <TextView
         android:id="@+id/msftprice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="200dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="150dp"
         android:fontFamily="@font/monbol"
         android:text="price"
         android:textColor="#FFFFFF"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/amznprice" />
 
     <TextView
         android:id="@+id/msftperneg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="40dp"
         android:fontFamily="@font/monbol"
         android:text="prueba"
         android:textColor="#f1242c"
-        app:layout_constraintStart_toEndOf="@+id/appleprice"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/amznperneg" />
 
     <TextView
         android:id="@+id/msftperpos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="40dp"
         android:fontFamily="@font/monbol"
         android:text="prueba"
         android:textColor="#5ED5A8"
-        app:layout_constraintStart_toEndOf="@+id/appleprice"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/amznperneg" />
-
-    <View
-        android:id="@+id/divider2"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="20dp"
-        android:background="?android:attr/listDivider"
-        app:layout_constraintTop_toBottomOf="@+id/msftnom"
-        tools:layout_editor_absoluteX="0dp" />
 
     <Button
         android:id="@+id/buscar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/monreg"
         android:onClick="buscar"
         android:text="¡BUSCAR AHORA!"
+        android:textColor="#171D22"
+        app:backgroundTint="#5ED5A8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.411"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="194dp"
+        android:layout_height="41dp"
         android:layout_marginBottom="8dp"
         android:ems="10"
+        android:hint="Ejemplo: MSFT o TSLA"
         android:inputType="textPersonName"
+        android:textColor="#5ED5A8"
+        android:textColorHighlight="#0E5019"
+        android:textColorHint="#5ED5A8"
         app:layout_constraintBottom_toTopOf="@+id/buscar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.383"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
@@ -442,9 +425,49 @@
         android:layout_width="41dp"
         android:layout_height="42dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="17dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:layout_constraintTop_toBottomOf="@+id/Sombreado"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <ImageView
+        android:id="@+id/logointel"
+        android:layout_width="41dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logotesla"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <ImageView
+        android:id="@+id/logopypl"
+        android:layout_width="41dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logointel"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <ImageView
+        android:id="@+id/logoamzn"
+        android:layout_width="41dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logopypl"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <ImageView
+        android:id="@+id/logomsft"
+        android:layout_width="41dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoamzn"
         app:srcCompat="@drawable/ic_launcher_foreground" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
