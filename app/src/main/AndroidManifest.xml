@@ -15,7 +15,7 @@
             android:name=".Splash"
             android:exported="true" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".BusquedaActivos"
             android:exported="true" />
         <activity
             android:name=".tuto3"
@@ -41,7 +41,7 @@
             android:name=".RegistroActivity"
             android:exported="true" />
         <activity
-            android:name=".BusquedaActivos"
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
