@@ -19,6 +19,8 @@
         <entry key="..\:/Users/VANT/AndroidStudioProjects/SajaFEB/app/src/main/res/layout/busqueda_activos.xml" value="0.11911231884057971" />
         <entry key="..\:/Users/VANT/AndroidStudioProjects/SajaFEB/app/src/main/res/layout/main.xml" value="0.33" />
         <entry key="..\:/Users/VANT/Desktop/SAJA/SAJA/app/src/main/res/layout/main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/josea/AndroidStudioProjects/SAJA21/app/src/main/res/layout/activity_wallet.xml" value="0.22" />
+        <entry key="..\:/Users/josea/AndroidStudioProjects/SAJA21/app/src/main/res/layout/login.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/perez/AndroidStudioProjects/SAJA/app/src/main/res/layout/activity_cuenta_creada.xml" value="0.1265625" />
         <entry key="..\:/Users/perez/AndroidStudioProjects/SAJA/app/src/main/res/layout/activity_forgot_password.xml" value="0.1265625" />
         <entry key="..\:/Users/perez/AndroidStudioProjects/SAJA/app/src/main/res/layout/activity_main.xml" value="0.265625" />
@@ -35,7 +37,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_15" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
