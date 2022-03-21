@@ -16,6 +16,7 @@
         android:text="LOG OUT"
         android:fontFamily = "@font/monreg"
         android:textColor="#171D22"
+        android:onClick="logout"
         app:backgroundTint="#5ED5A8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

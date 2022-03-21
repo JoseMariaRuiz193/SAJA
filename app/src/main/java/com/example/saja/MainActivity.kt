@@ -11,6 +11,7 @@ import android.view.View
 import android.widget.ImageView
 import android.widget.SearchView
 import android.widget.TextView
+import com.google.firebase.auth.FirebaseAuth
 import com.squareup.picasso.Picasso
 import io.finnhub.api.apis.DefaultApi
 import io.finnhub.api.infrastructure.ApiClient
@@ -258,6 +259,7 @@ class MainActivity : AppCompatActivity()  {
         val pantallaInicio = Intent(this, LoginActivity::class.java)
         startActivity(pantallaInicio)
     }
+
     fun buscar(view : View){
         val a : TextView = findViewById(R.id.editTextTextPersonName2)
         var atext = a.text.toString()
@@ -265,6 +267,12 @@ class MainActivity : AppCompatActivity()  {
         intent.putExtra("activo", atext )
 
         startActivity(intent)
+    }
+
+    fun logout(view : View){
+        FirebaseAuth.getInstance().signOut();
+        val pantallaInicio = Intent(this, LoginActivity::class.java)
+        startActivity(pantallaInicio)
     }
 }
 

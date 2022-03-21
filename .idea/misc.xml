@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Pruebas/AndroidStudioProjects/SAJAGrupal/app/src/main/res/layout/activity_cuenta_creada.xml" value="0.26268115942028986" />
+        <entry key="..\:/Users/Pruebas/AndroidStudioProjects/SAJAGrupal/app/src/main/res/layout/activity_splash.xml" value="0.26268115942028986" />
+        <entry key="..\:/Users/Pruebas/AndroidStudioProjects/SAJAGrupal/app/src/main/res/layout/activity_wallet.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Pruebas/AndroidStudioProjects/SAJAGrupal/app/src/main/res/layout/busqueda_activos.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Pruebas/AndroidStudioProjects/SAJAGrupal/app/src/main/res/layout/main.xml" value="0.26268115942028986" />
         <entry key="..\:/Users/VANT/AndroidStudioProjects/SAJA/app/src/main/res/layout/activity_forgot_password.xml" value="0.18" />
         <entry key="..\:/Users/VANT/AndroidStudioProjects/SAJA/app/src/main/res/layout/activity_main.xml" value="0.1390625" />
         <entry key="..\:/Users/VANT/AndroidStudioProjects/SAJA/app/src/main/res/layout/activity_main2.xml" value="0.13541666666666666" />
