@@ -1,11 +1,10 @@
 <resources>
-    <string name="app_name">SAJA</string>
+    <string name="app_name">Saja Investings</string>
     <string name="bsucador">BUSCADOR</string>
     <string name="username">USERNAME</string>
     <string name="todo">TODO</string>
     <string name="buscador">BUSCADOR</string>
     <string name="preferences">com.example.myapplication.PREFERENCE_KEY</string>
     <string name="default_web_client_id2" translatable="false">101383557769-3gn50u9npim4cqv7ctm3h3vksds99rv3.apps.googleusercontent.com</string>
-
 
 </resources>
